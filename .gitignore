@@ -1,0 +1,70 @@
+# Unreal Engine 4/5 通用 Git 忽略配置
+# 核心过滤：引擎生成文件、编译产物、缓存、日志、临时文件等
+# 引擎自动生成的项目文件（团队协作时仅需保留.uproject，其余由引擎重新生成）
+*.uproject.user
+*.uplugin.user
+# Config/DefaultEditor.ini
+# Config/DefaultEditorPerProjectUserSettings.ini
+Config/Input.ini
+
+# 编译产物（C++项目核心过滤，蓝图项目也可保留）
+Binaries/
+Intermediate/
+Build/
+DerivedDataCache/
+CAS/
+MyFPSGame.zip
+
+# 临时文件与缓存
+Saved/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.log
+*.ini.bak
+*.manifest
+
+# 编辑器缓存与生成文件
+.vs/
+*.sln
+*.suo
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sdf
+*.opensdf
+ipch/
+out/
+
+# 平台专属编译产物（覆盖Windows/Android/iOS/PS5/Xbox等主流平台）
+Binaries/Win64/
+Binaries/Win32/
+Binaries/Android/
+Binaries/IOS/
+Binaries/Linux/
+Binaries/PS5/
+Binaries/XboxSeriesX/
+
+# 资源临时文件（引擎导入/烘焙时生成，无需提交）
+Content/
+Content/**/*.uasset.bak
+Content/**/*.umap.bak
+Content/**/*.meta.bak
+
+# 第三方工具/插件生成文件
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+Plugins/**/Saved/
+
+# 操作系统与IDE通用忽略
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git本身忽略文件
+.gitignore.local
