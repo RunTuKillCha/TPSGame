@@ -46,7 +46,6 @@ Binaries/PS5/
 Binaries/XboxSeriesX/
 
 # 资源临时文件（引擎导入/烘焙时生成，无需提交）
-Content/
 Content/**/*.uasset.bak
 Content/**/*.umap.bak
 Content/**/*.meta.bak
