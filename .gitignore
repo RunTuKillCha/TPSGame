@@ -27,7 +27,6 @@ Saved/
 
 # 编辑器缓存与生成文件
 .vs/
-*.sln
 *.suo
 *.vcxproj
 *.vcxproj.filters
